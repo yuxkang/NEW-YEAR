@@ -22,10 +22,10 @@ canvas {
 
 <canvas id="canvas"></canvas>
 
-<div style="text-align:center;margin:2px ; font:normal 10px/10px 'MicroSoft YaHei';position: absolute;top: 300px; left: 680px;">
-<p style="font-family:times;color:#ea0b38"><font size=20>小喻给大家拜年了</font></p>
-<p>yxk</p>
-</div>
+<!--<div style="text-align:center;margin:20px ; font:normal 10px/24px 'MicroSoft YaHei';position: absolute;top: 300px; left: 680px;">-->
+<!--<p style="font-family:times;color:#ea0b38"><font size=20>小喻给大家拜年了</font></p>-->
+<!--<p>yxk</p>-->
+<!--</div>-->
 
 
 
@@ -258,8 +258,13 @@ function loop() {
   ctx.font = "50px sans-serif";
   var textData = ctx.measureText(text);
   ctx.fillStyle = "rgba("+parseInt(random(0,255))+","+parseInt(random(0,255))+","+parseInt(random(0,255))+",0.3)";
-  ctx.fillText(text,cw /2-textData.width/2,ch/2); 
-  
+  ctx.fillText(text,cw /2-textData.width/2,ch/2);
+
+    var text1 = " 小喻给大家拜年了：";
+  ctx.font = "50px sans-serif";
+  var textData = ctx.measureText(text1);
+  ctx.fillStyle = "rgba("+parseInt(random(0,255))+","+parseInt(random(0,255))+","+parseInt(random(0,255))+",0.3)";
+  ctx.fillText(text1,cw /2-textData.width/2,ch/2.5);
 	// loop over each firework, draw it, update it
 	var i = fireworks.length;
 	while( i-- ) {
